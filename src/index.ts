@@ -38,6 +38,8 @@ enum Direction2 {
   Right = 'Right',
 }
 
+// ! Revise Enum from youtube
+
 // console.log(Direction2.Left) // 0, equal 1 if set Up = 1
 
 // Objs
@@ -82,6 +84,8 @@ function log(message: string | number): void {
 * Res: 
 type Point = number | string
 const p1: Point = 1 --> it's ok, interface can't do this (interface Point = number | string will show err)
+
+interface can extend from others
 
 What else??
 */
@@ -164,6 +168,8 @@ const addUID = <T extends { name: string }>(obj: T) => {
   let uid = Math.floor(Math.random() * 100)
   return { ...obj, uid }
 }
+
+// ! revise this from Youtube (The Net Ninja)
 
 let docOne = addUID({ name: 'yoshi', age: 40 })
 //let docTwo = addUID('shaun');
